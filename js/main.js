@@ -13,17 +13,19 @@
       document.querySelector('.navbar').classList.remove("navbar-fixed");
       document.querySelector('.navbar-btn').style.display = "inline";
       document.querySelector('.mobile').style.display = "none";
+      document.querySelector('.mobile-menu').classList.remove("active");
+      mobile = false;
     }
   });
 
   let mobile = false;
   document.querySelector('.mobile').addEventListener('click', (e) => {
     if(!mobile){
-      document.querySelector('.mobile-menu').style.display = "block";
+      document.querySelector('.mobile-menu').classList.add("active");
       mobile = true;
       e.stopPropagation();
     }else{
-      document.querySelector('.mobile-menu').style.display = "none";
+      document.querySelector('.mobile-menu').classList.remove("active");
       mobile = false;
     }
   });
