@@ -1,7 +1,6 @@
 {
-  "name": "fronstack",
-  "version": "1.0.0",
-  "description": "Website for the frontstack community",
+  "name": "fronstack-hackathon",
+  "description": "frontstack-hackathon project",
   "scripts": {
     "start": "gulp"
   },
